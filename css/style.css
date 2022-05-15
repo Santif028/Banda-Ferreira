@@ -21,11 +21,28 @@ header {
     background-color: rgb(0, 0, 0);
 }
 
-header h1 {
+.latido {
     color: rgba(255, 0, 0, 30%);
     padding-top: 10px;
     padding-left: 25px;
     font-size: 60px;
+    animation: latidos 3s infinite;
+    transform-origin: center;
+}
+
+/* animacion de latido */
+@keyframes latidos {
+    from {
+        transform: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    to {
+        transform: none;
+    }
 }
 
 /* estilos de nav */
@@ -71,13 +88,13 @@ main {
 
 /* estilos de Nosotros */
 
-.bodyNosotros{
+.bodyNosotros {
     height: 100vh;
     display: grid;
     grid-template-rows: 0.5fr 4fr 0.4fr;
     grid-template-areas: "header header header"
-                         "main main main"
-                         "footer footer footer";
+        "main main main"
+        "footer footer footer";
 }
 
 .mainNosotros {
@@ -112,13 +129,13 @@ main {
 
 /* estilos de Música */
 
-.bodyMusica{
+.bodyMusica {
     height: 100vh;
     display: grid;
     grid-template-rows: 0.5fr 4fr 0.4fr;
     grid-template-areas: "header header"
-                         "main main"
-                         "footer footer";
+        "main main"
+        "footer footer";
 }
 
 
@@ -145,13 +162,13 @@ main {
 
 /* estilos de Noticias */
 
-.bodyNoticias{
+.bodyNoticias {
     height: 100vh;
     display: grid;
     grid-template-rows: 0.5fr 4fr 0.4fr;
     grid-template-areas: "header header"
-                         "main main"
-                         "footer footer";
+        "main main"
+        "footer footer";
 }
 
 .mainNoticias {
@@ -171,13 +188,13 @@ main {
 
 /* estilos de Contacto */
 
-.bodyContacto{
+.bodyContacto {
     height: 100vh;
     display: grid;
     grid-template-rows: 0.5fr 4fr 0.4fr;
     grid-template-areas: "header header"
-                         "main main"
-                         "footer footer";
+        "main main"
+        "footer footer";
 }
 
 .formulario {
@@ -214,22 +231,24 @@ footer h2 {
 }
 
 @media screen and (min-width:1024px) {
-    header h1{
+    header h1 {
         font-size: 50px;
     }
-    
-    nav ul li{
+
+    nav ul li {
         font-size: 35px;
     }
-    
-    .card p{
+
+    .card p {
         font-size: 20px;
     }
-    .mainNoticias{
+
+    .mainNoticias {
         height: 70vh;
         font-size: 20px;
     }
-    .mainMusica{
+
+    .mainMusica {
         height: 70vh;
         font-size: 20px;
     }
