@@ -23,10 +23,6 @@ body {
         "footer footer footer";
 }
 
-.mainIndex{
-   
-}
-
 .sectionIndex {
     display: flex;
     flex-direction: column;
@@ -255,10 +251,11 @@ footer h2 {
 }
 
 @media screen and (max-width:425px) {
-    .mainIndex{
+    .mainIndex {
         height: 120vh;
     }
-    .sectionIndex{
+
+    .sectionIndex {
         gap: 100px;
     }
 }
