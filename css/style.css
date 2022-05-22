@@ -12,6 +12,26 @@ body {
     background-color: #16080a;
 }
 
+/* estilos de index */
+
+.bodyIndex {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr 0.4fr;
+    grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+.mainIndex{
+   
+}
+
+.sectionIndex {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 
 /* estilos de header */
 
@@ -19,15 +39,19 @@ header {
     grid-area: header;
     display: flex;
     background-color: rgb(0, 0, 0);
+    align-items: center;
 }
 
 .latido {
-    color: rgba(255, 0, 0, 30%);
-    padding-top: 10px;
     padding-left: 25px;
     font-size: 60px;
     animation: latidos 3s infinite;
     transform-origin: center;
+}
+
+.latido a {
+    color: rgba(255, 0, 0, 30%);
+    text-decoration: none;
 }
 
 /* animacion de latido */
@@ -47,25 +71,25 @@ header {
 
 /* estilos de nav */
 
-nav {
+.menu {
     margin: 20px;
     width: 100%;
     display: flex;
 }
 
-nav ul li {
+.menu ul li {
     list-style-type: none;
     font-size: 40px;
     margin: 5px;
     display: inline-block;
 }
 
-nav ul li a {
+.menu ul li a {
     text-decoration: none;
     color: white;
 }
 
-nav ul li a:hover {
+.menu ul li a:hover {
     color: rgba(255, 0, 0, 30%);
 }
 
@@ -76,7 +100,6 @@ main {
     align-items: center;
     grid-area: main;
     margin: 20px;
-    height: 3fr;
 }
 
 /* estilos de Inicio */
@@ -107,6 +130,7 @@ main {
 .card {
     display: flex;
     flex-direction: column;
+    background-color: transparent;
     color: white;
     width: 450px;
     height: 700px;
@@ -138,7 +162,6 @@ main {
         "footer footer";
 }
 
-
 .mainMusica {
     height: 100vh;
     display: flex;
@@ -146,7 +169,7 @@ main {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 70px;
 }
 
 .sectionUno {
@@ -198,7 +221,7 @@ main {
 }
 
 .formulario {
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
@@ -225,10 +248,32 @@ footer {
 }
 
 footer h2 {
+    font-size: 28px;
     font-weight: 125;
     color: white;
     text-align: center;
 }
+
+@media screen and (max-width:425px) {
+    .mainIndex{
+        height: 120vh;
+    }
+    .sectionIndex{
+        gap: 100px;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    header nav {
+        text-align: end;
+    }
+
+    .navbar-toggler {
+        background-color: rgba(255, 0, 0, 30%);
+    }
+}
+
 
 @media screen and (min-width:1024px) {
     header h1 {
