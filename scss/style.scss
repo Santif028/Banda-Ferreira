@@ -123,6 +123,12 @@ footer {
     }
 }
 
+@media only screen and (max-width:500px){
+    .mainMusica{
+        height: 70vh;
+    }
+}
+
 @media only screen and(min-width:1024px){
     .latido{
         font-size: 50px;
