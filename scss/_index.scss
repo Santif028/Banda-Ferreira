@@ -1,0 +1,11 @@
+/* index */
+.bodyIndex{
+    @include grid;
+    .sectionIndex{
+        @include flexIndex;
+    }
+    .imgBanda{
+        color: white;
+        width: 100%;
+    }
+}

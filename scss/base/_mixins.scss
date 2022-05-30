@@ -1,0 +1,23 @@
+@mixin grid {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr 0.4fr;
+    grid-template-areas: "header header header"
+        "main main main"
+        "footer footer footer";
+}
+
+@mixin flexIndex{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+@mixin grid2 {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr 0.4fr;
+    grid-template-areas: "header header"
+        "main main"
+        "footer footer";
+}

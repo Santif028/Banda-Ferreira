@@ -1,0 +1,23 @@
+/* música */
+.bodyMusica {
+    @include grid2;
+
+    .mainMusica {
+        height: 60vh;
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 70px;
+        .sectionUno{
+            display: flex;
+            flex-direction: column;
+        }
+        .sectionDos{
+            font-size: 22px;
+            color: white;
+            width: 450px;
+        }
+    }
+}

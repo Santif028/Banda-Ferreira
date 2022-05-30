@@ -1,0 +1,13 @@
+/* noticias */
+.bodyNoticias {
+    @include grid;
+    .mainNoticias{
+        color: white;
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        justify-content: center;
+        align-items: center;
+    }
+}

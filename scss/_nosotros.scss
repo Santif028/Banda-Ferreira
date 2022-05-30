@@ -1,0 +1,35 @@
+/* nosotros */
+.bodyNosotros {
+    @include grid;
+
+    .mainNosotros {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            color: white;
+            width: 450px;
+            height: 700px;
+            padding: 20px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+            gap: 10px;
+
+            img{
+                width: 400px;
+                height: 300px;
+                border-radius: 5px;
+            }
+
+            p{
+                font-size: 22px;
+                font-weight: lighter;
+                text-align: center;
+            }
+        }
+    }
+}

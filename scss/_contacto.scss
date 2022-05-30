@@ -1,0 +1,11 @@
+/* contacto */
+.bodyContacto{
+    @include grid2;
+    .formulario{
+        display: grid;
+        justify-content: center;
+    }
+    .formColor{
+        color: white;
+    }
+}
