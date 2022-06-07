@@ -26,44 +26,46 @@ header {
     display: flex;
     background-color: $color-secundario;
     align-items: center;
+
+    /* nav */
+    .menu {
+        margin: 20px;
+        width: 100%;
+        display: flex;
+
+        .latido {
+            padding-left: 25px;
+            font-size: 60px;
+            animation: latidos 3s infinite;
+            transform-origin: center;
+
+            a {
+                color: $color-complementario;
+                text-decoration: none;
+            }
+
+
+        }
+
+        ul li {
+            list-style-type: none;
+            font-size: 40px;
+            margin: 5px;
+            display: inline-block;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            a:hover {
+                color: $color-complementario;
+            }
+        }
+    }
 }
 
-/* nav */
-.menu {
-    margin: 20px;
-    width: 100%;
-    display: flex;
 
-    .latido {
-        padding-left: 25px;
-        font-size: 60px;
-        animation: latidos 3s infinite;
-        transform-origin: center;
-
-        a {
-            color: $color-complementario;
-            text-decoration: none;
-        }
-
-
-    }
-
-    ul li {
-        list-style-type: none;
-        font-size: 40px;
-        margin: 5px;
-        display: inline-block;
-
-        a {
-            text-decoration: none;
-            color: white;
-        }
-
-        a:hover {
-            color: $color-complementario;
-        }
-    }
-}
 
 /* animacion de latido */
 @keyframes latidos {
@@ -114,34 +116,57 @@ footer {
 
 /* medias queries */
 @media only screen and (max-width:1024px) {
-    header nav {
-        text-align: end;
+    header {
+        .menu {
+            text-align: end;
+
+            .navbar-toggler {
+                background-color: $color-complementario;
+            }
+        }
     }
 
-    .navbar-toggler {
-        background-color: $color-complementario;
+
+}
+
+@media only screen and (max-width:500px) {
+    .bodyMusica {
+        .mainMusica {
+            height: 120vh;
+        }
     }
 }
 
-@media only screen and (max-width:500px){
-    .mainMusica{
-        height: 120vh;
+@media only screen and(min-width:1024px) {
+    header {
+        .menu {
+            .latido {
+                font-size: 50px;
+            }
+        }
     }
-}
 
-@media only screen and(min-width:1024px){
-    .latido{
-        font-size: 50px;
+    .bodyNoticias {
+        .mainNoticias {
+            display: flex;
+            flex-direction: row;
+
+            section {
+                width: 450px;
+                font-size: 20px;
+            }
+        }
     }
-    .mainNoticias{
-        display: flex;
-        flex-direction: row;  
+
+    .bodyNosotros {
+        .mainNosotros {
+            .card {
+                p {
+                    font-size: 20px;
+                }
+            }
+        }
     }
-    .mainNoticias section{
-        width: 450px;
-        font-size: 20px;
-    }
-    .card p{
-        font-size: 20px;
-    }
+
+
 }

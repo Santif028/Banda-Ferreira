@@ -107,31 +107,30 @@ header {
   grid-area: header;
   display: flex;
   background-color: black;
-  align-items: center; }
-
-/* nav */
-.menu {
-  margin: 20px;
-  width: 100%;
-  display: flex; }
-  .menu .latido {
-    padding-left: 25px;
-    font-size: 60px;
-    animation: latidos 3s infinite;
-    transform-origin: center; }
-    .menu .latido a {
-      color: rgba(255, 0, 0, 0.3);
-      text-decoration: none; }
-  .menu ul li {
-    list-style-type: none;
-    font-size: 40px;
-    margin: 5px;
-    display: inline-block; }
-    .menu ul li a {
-      text-decoration: none;
-      color: white; }
-    .menu ul li a:hover {
-      color: rgba(255, 0, 0, 0.3); }
+  align-items: center;
+  /* nav */ }
+  header .menu {
+    margin: 20px;
+    width: 100%;
+    display: flex; }
+    header .menu .latido {
+      padding-left: 25px;
+      font-size: 60px;
+      animation: latidos 3s infinite;
+      transform-origin: center; }
+      header .menu .latido a {
+        color: rgba(255, 0, 0, 0.3);
+        text-decoration: none; }
+    header .menu ul li {
+      list-style-type: none;
+      font-size: 40px;
+      margin: 5px;
+      display: inline-block; }
+      header .menu ul li a {
+        text-decoration: none;
+        color: white; }
+      header .menu ul li a:hover {
+        color: rgba(255, 0, 0, 0.3); }
 
 /* animacion de latido */
 @keyframes latidos {
@@ -170,23 +169,23 @@ footer {
 
 /* medias queries */
 @media only screen and (max-width: 1024px) {
-  header nav {
+  header .menu {
     text-align: end; }
-  .navbar-toggler {
-    background-color: rgba(255, 0, 0, 0.3); } }
+    header .menu .navbar-toggler {
+      background-color: rgba(255, 0, 0, 0.3); } }
 
 @media only screen and (max-width: 500px) {
-  .mainMusica {
+  .bodyMusica .mainMusica {
     height: 120vh; } }
 
 @media only screen and (min-width: 1024px) {
-  .latido {
+  header .menu .latido {
     font-size: 50px; }
-  .mainNoticias {
+  .bodyNoticias .mainNoticias {
     display: flex;
     flex-direction: row; }
-  .mainNoticias section {
-    width: 450px;
-    font-size: 20px; }
-  .card p {
+    .bodyNoticias .mainNoticias section {
+      width: 450px;
+      font-size: 20px; }
+  .bodyNosotros .mainNosotros .card p {
     font-size: 20px; } }
