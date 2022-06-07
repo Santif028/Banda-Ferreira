@@ -1,0 +1,9 @@
+En los archivos index.html, contacto.html, noticias.html, musica.html y nosotros.html sumé el SEO con las siguientes caracteristicas:
+
+1) Title: mediante la etiqueta Title le di titulos a todas las secciones html.
+2) Description: mediante la etiqueta "meta name description" agregué el siguiente parrafo explicando brevemente lo que contiene mi sitio web: "Sitio Web de Nocaut, banda de Metal argentino formada en 2019, donde encontrarás imágenes, videos, música y mucho más".
+3) Keywords: mediante la etiqueta "meta name keywords" agregué las siguientes palabras clave: "Música, Metal, Argentina".
+4) Estructura Semántica: mediante las etiquetas "header, main y footer" le di una estructura semántica a todos mis html.
+5) H1: mediante la etiqueta H1, le di a todos mis html el encabezado "NOCAUT".
+
+
