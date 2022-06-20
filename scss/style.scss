@@ -26,6 +26,7 @@ header {
     display: flex;
     background-color: $color-secundario;
     align-items: center;
+    height: fit-content;
 
     /* nav */
     .menu {
@@ -34,8 +35,8 @@ header {
         display: flex;
 
         .latido {
-            padding-left: 25px;
-            font-size: 60px;
+            width: 200px;
+            height: 70px;
             animation: latidos 3s infinite;
             transform-origin: center;
 
@@ -84,10 +85,7 @@ header {
 
 /* main */
 main {
-    display: grid;
-    align-items: center;
     grid-area: main;
-    margin: 20px;
 }
 
 /* footer */
@@ -97,17 +95,24 @@ footer {
     flex-direction: column;
     background-color: $color-secundario;
     align-items: center;
+    justify-content: center;
+    height: fit-content;
 
-    .instagram,
-    .twitter,
-    .spotify {
-        margin: 10px;
-        filter: grayscale(1);
-        width: 50px;
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 5px;
+
+        .instagram {
+            filter: grayscale(1);
+            width: 50px;
+        }
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 22px;
         font-weight: 125;
         color: white;
         text-align: center;
@@ -115,24 +120,28 @@ footer {
 }
 
 /* medias queries */
-@media only screen and (max-width:1024px) {
-    header {
-        .menu {
-            text-align: end;
 
-            .navbar-toggler {
-                background-color: $color-complementario;
-            }
+@media only screen and (max-width:765px) {
+    .bodyIndex{
+        .mainIndex{
+            height: 150vh;
+        }
+    }
+    .bodyMusica {
+        .mainMusica {
+            height: 130vh;
         }
     }
 
+    .bodyNoticias {
+        .mainNoticias {
+            height: 130vh;
+        }
+    }
 
-}
-
-@media only screen and (max-width:500px) {
-    .bodyMusica {
-        .mainMusica {
-            height: 120vh;
+    .bodyContacto {
+        .mainContacto {
+            height: 130vh;
         }
     }
 }
@@ -164,6 +173,20 @@ footer {
                 p {
                     font-size: 20px;
                 }
+            }
+        }
+    }
+
+
+}
+
+@media only screen and (max-width:1024px) {
+    header {
+        .menu {
+            text-align: end;
+
+            .navbar-toggler {
+                background-color: $color-complementario;
             }
         }
     }

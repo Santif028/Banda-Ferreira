@@ -1,11 +1,23 @@
 /* index */
-.bodyIndex{
+.bodyIndex {
     @include grid;
-    .sectionIndex{
-        @include flexIndex;
+
+    .mainIndex {
+        .sectionIndex {
+            .articleImg {
+                .imgBanda {
+                    color: white;
+                    width: 100%;
+                }
+            }
+            .articleVideos{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 20px;
+            }
+
+        }
     }
-    .imgBanda{
-        color: white;
-        width: 100%;
-    }
+
 }

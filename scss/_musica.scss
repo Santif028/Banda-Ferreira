@@ -3,16 +3,37 @@
     @include grid2;
 
     .mainMusica {
-        height: 60vh;
+        margin: 20px;
         display: flex;
         flex-direction: row-reverse;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 70px;
+        section{
+            display: flex;
+            flex-direction: column;
+            background-color: transparent;
+            color: white;
+            width: 600px;
+            height: fit-content;
+            padding: 20px;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+            gap: 20px;
+            border-radius: 5px;
+        }
         .sectionUno{
             display: flex;
             flex-direction: column;
+            align-items: center;
+            img{
+                width: 500px;
+                border-radius: 5px;
+            }
+            p{
+                
+                font-size: 22px;
+            }
         }
         .sectionDos{
             font-size: 22px;

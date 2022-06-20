@@ -15,13 +15,14 @@ body {
   display: grid;
   grid-template-rows: 0.5fr 4fr 0.4fr;
   grid-template-areas: "header header header" "main main main" "footer footer footer"; }
-  .bodyIndex .sectionIndex {
-    display: flex;
-    flex-direction: column;
-    gap: 50px; }
-  .bodyIndex .imgBanda {
+  .bodyIndex .mainIndex .sectionIndex .articleImg .imgBanda {
     color: white;
     width: 100%; }
+  .bodyIndex .mainIndex .sectionIndex .articleVideos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px; }
 
 /* nosotros */
 .bodyNosotros {
@@ -30,10 +31,12 @@ body {
   grid-template-rows: 0.5fr 4fr 0.4fr;
   grid-template-areas: "header header header" "main main main" "footer footer footer"; }
   .bodyNosotros .mainNosotros {
+    margin: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px; }
+    gap: 20px;
+    align-items: center; }
     .bodyNosotros .mainNosotros .card {
       display: flex;
       flex-direction: column;
@@ -43,7 +46,8 @@ body {
       height: 700px;
       padding: 20px;
       box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
-      gap: 10px; }
+      gap: 10px;
+      border-radius: 5px; }
       .bodyNosotros .mainNosotros .card img {
         width: 400px;
         height: 300px;
@@ -60,16 +64,33 @@ body {
   grid-template-rows: 0.5fr 4fr 0.4fr;
   grid-template-areas: "header header" "main main" "footer footer"; }
   .bodyMusica .mainMusica {
-    height: 60vh;
+    margin: 20px;
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 70px; }
+    .bodyMusica .mainMusica section {
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      color: white;
+      width: 600px;
+      height: fit-content;
+      padding: 20px;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+      gap: 20px;
+      border-radius: 5px; }
     .bodyMusica .mainMusica .sectionUno {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      align-items: center; }
+      .bodyMusica .mainMusica .sectionUno img {
+        width: 500px;
+        border-radius: 5px; }
+      .bodyMusica .mainMusica .sectionUno p {
+        font-size: 22px; }
     .bodyMusica .mainMusica .sectionDos {
       font-size: 22px;
       color: white;
@@ -82,13 +103,25 @@ body {
   grid-template-rows: 0.5fr 4fr 0.4fr;
   grid-template-areas: "header header header" "main main main" "footer footer footer"; }
   .bodyNoticias .mainNoticias {
+    margin: 20px;
     color: white;
     font-size: 22px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 70px;
     justify-content: center;
     align-items: center; }
+    .bodyNoticias .mainNoticias section {
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      color: white;
+      width: 600px;
+      height: fit-content;
+      padding: 20px;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+      gap: 20px;
+      border-radius: 5px; }
 
 /* contacto */
 .bodyContacto {
@@ -96,11 +129,44 @@ body {
   display: grid;
   grid-template-rows: 0.5fr 4fr 0.4fr;
   grid-template-areas: "header header" "main main" "footer footer"; }
-  .bodyContacto .formulario {
-    display: grid;
-    justify-content: center; }
-  .bodyContacto .formColor {
-    color: white; }
+  .bodyContacto .mainContacto {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .bodyContacto .mainContacto .formulario {
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      color: white;
+      width: 600px;
+      height: fit-content;
+      padding: 20px;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+      gap: 20px;
+      border-radius: 5px; }
+      .bodyContacto .mainContacto .formulario .formColor {
+        color: white; }
+        .bodyContacto .mainContacto .formulario .formColor .formStyle {
+          display: flex;
+          flex-direction: column;
+          gap: 50px; }
+          .bodyContacto .mainContacto .formulario .formColor .formStyle legend {
+            text-align: center;
+            font-size: 35px; }
+          .bodyContacto .mainContacto .formulario .formColor .formStyle .opcionesForm {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 22px; }
+          .bodyContacto .mainContacto .formulario .formColor .formStyle .botonForm {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 22px; }
+            .bodyContacto .mainContacto .formulario .formColor .formStyle .botonForm input {
+              border-radius: 5px;
+              width: 60px; }
 
 /* header */
 header {
@@ -108,14 +174,15 @@ header {
   display: flex;
   background-color: black;
   align-items: center;
+  height: fit-content;
   /* nav */ }
   header .menu {
     margin: 20px;
     width: 100%;
     display: flex; }
     header .menu .latido {
-      padding-left: 25px;
-      font-size: 60px;
+      width: 200px;
+      height: 70px;
       animation: latidos 3s infinite;
       transform-origin: center; }
       header .menu .latido a {
@@ -143,10 +210,7 @@ header {
 
 /* main */
 main {
-  display: grid;
-  align-items: center;
-  grid-area: main;
-  margin: 20px; }
+  grid-area: main; }
 
 /* footer */
 footer {
@@ -154,29 +218,34 @@ footer {
   display: flex;
   flex-direction: column;
   background-color: black;
-  align-items: center; }
-  footer .instagram,
-  footer .twitter,
-  footer .spotify {
-    margin: 10px;
-    filter: grayscale(1);
-    width: 50px; }
+  align-items: center;
+  justify-content: center;
+  height: fit-content; }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px; }
+    footer div .instagram {
+      filter: grayscale(1);
+      width: 50px; }
   footer h2 {
-    font-size: 28px;
+    font-size: 22px;
     font-weight: 125;
     color: white;
     text-align: center; }
 
 /* medias queries */
-@media only screen and (max-width: 1024px) {
-  header .menu {
-    text-align: end; }
-    header .menu .navbar-toggler {
-      background-color: rgba(255, 0, 0, 0.3); } }
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 765px) {
+  .bodyIndex .mainIndex {
+    height: 150vh; }
   .bodyMusica .mainMusica {
-    height: 120vh; } }
+    height: 130vh; }
+  .bodyNoticias .mainNoticias {
+    height: 130vh; }
+  .bodyContacto .mainContacto {
+    height: 130vh; } }
 
 @media only screen and (min-width: 1024px) {
   header .menu .latido {
@@ -189,3 +258,9 @@ footer {
       font-size: 20px; }
   .bodyNosotros .mainNosotros .card p {
     font-size: 20px; } }
+
+@media only screen and (max-width: 1024px) {
+  header .menu {
+    text-align: end; }
+    header .menu .navbar-toggler {
+      background-color: rgba(255, 0, 0, 0.3); } }
