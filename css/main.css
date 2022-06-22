@@ -113,15 +113,21 @@ body {
     align-items: center; }
     .bodyNoticias .mainNoticias section {
       display: flex;
+      justify-content: center;
       flex-direction: column;
       background-color: transparent;
       color: white;
-      width: 600px;
+      width: 450px;
       height: fit-content;
       padding: 20px;
       box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
       gap: 20px;
       border-radius: 5px; }
+      .bodyNoticias .mainNoticias section img {
+        width: 400px;
+        height: 300px;
+        border-radius: 5px;
+        align-self: center; }
 
 /* contacto */
 .bodyContacto {
@@ -241,8 +247,6 @@ footer {
   .bodyIndex .mainIndex {
     height: 150vh; }
   .bodyMusica .mainMusica {
-    height: 130vh; }
-  .bodyNoticias .mainNoticias {
     height: 130vh; }
   .bodyContacto .mainContacto {
     height: 130vh; } }
