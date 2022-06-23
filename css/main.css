@@ -66,22 +66,27 @@ body {
   .bodyMusica .mainMusica {
     margin: 20px;
     display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 70px; }
+    gap: 20px; }
     .bodyMusica .mainMusica section {
       display: flex;
       flex-direction: column;
       background-color: transparent;
       color: white;
-      width: 600px;
+      width: 550px;
       height: fit-content;
       padding: 20px;
       box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
-      gap: 20px;
       border-radius: 5px; }
+    .bodyMusica .mainMusica .sectionAdelanto {
+      width: fit-content;
+      height: fit-content; }
+      .bodyMusica .mainMusica .sectionAdelanto p {
+        font-size: 25px;
+        text-align: center;
+        margin: 0px; }
     .bodyMusica .mainMusica .sectionUno {
       display: flex;
       flex-direction: column;
@@ -90,11 +95,8 @@ body {
         width: 500px;
         border-radius: 5px; }
       .bodyMusica .mainMusica .sectionUno p {
-        font-size: 22px; }
-    .bodyMusica .mainMusica .sectionDos {
-      font-size: 22px;
-      color: white;
-      width: 450px; }
+        font-size: 22px;
+        margin: 10px; }
 
 /* noticias */
 .bodyNoticias {
@@ -236,7 +238,7 @@ footer {
     footer div .instagram {
       filter: grayscale(1);
       width: 50px; }
-  footer h2 {
+  footer h1 {
     font-size: 22px;
     font-weight: 125;
     color: white;
@@ -247,7 +249,7 @@ footer {
   .bodyIndex .mainIndex {
     height: 150vh; }
   .bodyMusica .mainMusica {
-    height: 130vh; }
+    height: 120vh; }
   .bodyContacto .mainContacto {
     height: 130vh; } }
 
