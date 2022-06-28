@@ -125,7 +125,6 @@ footer {
 @media only screen and (max-width:768px) {
     .bodyIndex{
         .mainIndex{
-            height: 180vh;
             .sectionIndex{
                 flex-direction: column;
                 align-items: center;
@@ -179,6 +178,7 @@ footer {
             flex-direction: row;
 
             section {
+                width: fit-content;
                 font-size: 20px;
             }
         }

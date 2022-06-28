@@ -15,9 +15,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 0.5fr 4fr 0.4fr;
-  grid-template-areas: "header header header"
- "main main main"
- "footer footer footer"; }
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
   .bodyIndex .mainIndex .sectionIndex {
     display: flex;
     margin: 20px;
@@ -50,9 +48,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 0.5fr 4fr 0.4fr;
-  grid-template-areas: "header header header"
- "main main main"
- "footer footer footer"; }
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
   .bodyNosotros .mainNosotros {
     margin: 20px;
     display: flex;
@@ -85,9 +81,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 0.5fr 4fr 0.4fr;
-  grid-template-areas: "header header"
- "main main"
- "footer footer"; }
+  grid-template-areas: "header header" "main main" "footer footer"; }
   .bodyMusica .mainMusica {
     margin: 20px;
     display: flex;
@@ -128,9 +122,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 0.5fr 4fr 0.4fr;
-  grid-template-areas: "header header header"
- "main main main"
- "footer footer footer"; }
+  grid-template-areas: "header header header" "main main main" "footer footer footer"; }
   .bodyNoticias .mainNoticias {
     margin: 20px;
     color: white;
@@ -146,7 +138,7 @@ body {
       flex-direction: column;
       background-color: transparent;
       color: white;
-      width: 90%;
+      width: fit-content;
       height: fit-content;
       padding: 20px;
       box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
@@ -170,9 +162,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: 0.5fr 4fr 0.4fr;
-  grid-template-areas: "header header"
- "main main"
- "footer footer"; }
+  grid-template-areas: "header header" "main main" "footer footer"; }
   .bodyContacto .mainContacto {
     margin: 20px;
     display: flex;
@@ -282,11 +272,9 @@ footer {
 
 /* medias queries */
 @media only screen and (max-width: 768px) {
-  .bodyIndex .mainIndex {
-    height: 180vh; }
-    .bodyIndex .mainIndex .sectionIndex {
-      flex-direction: column;
-      align-items: center; }
+  .bodyIndex .mainIndex .sectionIndex {
+    flex-direction: column;
+    align-items: center; }
   .bodyNosotros .mainNosotros .card {
     height: 750px; }
   .bodyMusica .mainMusica {
@@ -303,6 +291,7 @@ footer {
     display: flex;
     flex-direction: row; }
     .bodyNoticias .mainNoticias section {
+      width: fit-content;
       font-size: 20px; }
   .bodyNosotros .mainNosotros .card p {
     font-size: 20px; } }
