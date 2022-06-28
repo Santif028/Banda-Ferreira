@@ -272,8 +272,9 @@ footer {
 
 /* medias queries */
 @media only screen and (max-width: 768px) {
-  .bodyIndex .mainIndex {
-    height: 150vh; }
+  .bodyIndex .mainIndex .sectionIndex {
+    flex-direction: column;
+    align-items: center; }
   .bodyNosotros .mainNosotros .card {
     height: 750px; }
   .bodyMusica .mainMusica {
