@@ -11,6 +11,7 @@
 
 body {
     background-color: $color-principal;
+    max-width: 100vw;
 }
 
 @import "index";
@@ -124,6 +125,7 @@ footer {
 @media only screen and (max-width:768px) {
     .bodyIndex{
         .mainIndex{
+            height: 180vh;
             .sectionIndex{
                 flex-direction: column;
                 align-items: center;
@@ -155,6 +157,18 @@ footer {
         .menu {
             .latido {
                 font-size: 50px;
+            }
+        }
+    }
+
+    .bodyIndex{
+        .mainIndex{
+            .sectionIndex{
+                .articleIntro{
+                    p{
+                        font-size: 20px;
+                    }
+                }
             }
         }
     }

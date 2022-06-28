@@ -7,7 +7,8 @@
   font-family: 'Bebas Neue', cursive; }
 
 body {
-  background-color: #2a0f13; }
+  background-color: #2a0f13;
+  max-width: 100vw; }
 
 /* index */
 .bodyIndex {
@@ -19,13 +20,12 @@ body {
     display: flex;
     margin: 20px;
     gap: 20px;
-    justify-content: center; }
+    align-items: center; }
     .bodyIndex .mainIndex .sectionIndex .articleImg {
       display: flex; }
       .bodyIndex .mainIndex .sectionIndex .articleImg .imgBanda {
         color: white;
-        width: 1024px;
-        align-self: center;
+        width: 100%;
         border-radius: 5px; }
     .bodyIndex .mainIndex .sectionIndex .articleIntro {
       display: flex;
@@ -138,7 +138,7 @@ body {
       flex-direction: column;
       background-color: transparent;
       color: white;
-      width: fit-content;
+      width: 90%;
       height: fit-content;
       padding: 20px;
       box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
@@ -272,9 +272,11 @@ footer {
 
 /* medias queries */
 @media only screen and (max-width: 768px) {
-  .bodyIndex .mainIndex .sectionIndex {
-    flex-direction: column;
-    align-items: center; }
+  .bodyIndex .mainIndex {
+    height: 180vh; }
+    .bodyIndex .mainIndex .sectionIndex {
+      flex-direction: column;
+      align-items: center; }
   .bodyNosotros .mainNosotros .card {
     height: 750px; }
   .bodyMusica .mainMusica {
@@ -285,6 +287,8 @@ footer {
 @media only screen and (min-width: 1024px) {
   header .menu .latido {
     font-size: 50px; }
+  .bodyIndex .mainIndex .sectionIndex .articleIntro p {
+    font-size: 20px; }
   .bodyNoticias .mainNoticias {
     display: flex;
     flex-direction: row; }
